@@ -1,0 +1,104 @@
+.task-card {
+    position: relative;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s;
+  }
+
+  .task-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .priority {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .priority.low {
+    background: green;
+  }
+  
+  .priority.medium {
+    background: orange;
+  }
+  
+  .priority.high {
+    background: red;
+  }
+  
+  .task-title h3,
+  .task-desc p {
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .task-title h3:hover,
+  .task-desc p:hover {
+    background: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .task-title input,
+  .task-desc textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-desc textarea {
+    resize: none;
+    height: 60px;
+  }
+
+  .task-date-and-delete{
+    display: flex;
+    flex-direction: row;
+    color:#9f9b9b;
+  }
+
+  .task-date{
+    width: 100%;
+    text-align: start;
+    font-size: 12px;
+  }
+  
+  .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+    align-self: flex-end;
+    transition: 0.2s;
+    padding: 0px;
+    font-size: 12px;
+  }
+  
+  .delete-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 400px) {
+    .task-card {
+      width: 100%;
+    }
+  }
+  

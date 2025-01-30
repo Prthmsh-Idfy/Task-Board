@@ -1,0 +1,42 @@
+/* Individual Column */
+.column {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid #007bff;
+    transition: 0.3s ease-in-out;
+    
+  }
+  
+  /* Column Titles */
+  .column h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Task List inside Column */
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 12px;
+    padding: 5px;
+    min-height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive for Mobile */
+  @media (max-width: 900px) {
+    .column {
+      width: 90%;
+    }
+  }
+  
