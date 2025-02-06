@@ -12,6 +12,19 @@
     transition: 0.3s ease-in-out;
     
   }
+
+  .task-placeholder {
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0.1);
+    border: 2px dashed blue;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    color: blue;
+  }
+  
   
   /* Column Titles */
   .column h2 {

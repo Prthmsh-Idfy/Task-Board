@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { useSearch } from "../searchContext";
 
-const Navbar = ({ onSearch }) => {
+const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const { setSearchQuery } = useSearch();
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
-    onSearch(e.target.value); // Passing search value to parent component
+    setSearchQuery(e.target.value); 
   };
 
   return (
